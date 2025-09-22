@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117; /* Fondo oscuro tipo GitHub nocturno */
+    color: #c9d1d9;       /* Color claro para mejor contraste */
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .contenedor {
+    max-width: 700px;
+    margin: auto;
+    background: #161b22;  /* Contenedor con tono oscuro intermedio */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1f6feb;
+  }
+  
+  .titulo {
+    color: #58a6ff;
+  }
+  
+  .instruccion {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .entrada {
+    padding: 10px;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  .opciones {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #79c0ff;
+    font-weight: bold;
+  }
+  
+  .proceso {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #8b949e;
+    text-align: left;
+    background: #21262d;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    white-space: pre-wrap;
+    box-shadow: inset 0 0 5px #30363d;
+  }
+  

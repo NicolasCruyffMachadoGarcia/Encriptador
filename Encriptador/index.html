@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cifrador Multimétodo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1 class="titulo">🔐 Cifrador Multimétodo - Proyecto Criptografía</h1>
+
+    <p class="instruccion">Escribe el texto a cifrar:</p>
+    <input type="text" id="textoOriginal" class="entrada" placeholder="Escribe aquí..." oninput="procesarTexto()" />
+
+    <p class="instruccion">Selecciona el método de cifrado:</p>
+    <select id="metodoCifrado" class="entrada" onchange="procesarTexto()">
+      <option value="personalizado">🔷 Personalizado (+4 e inversión)</option>
+      <option value="cesar">🔄 César (Desplazamiento simple)</option>
+      <option value="atbash">🔁 Atbash (Inversión alfabética)</option>
+      <option value="vigenere">🔤 Vigenère (con clave)</option>
+      <option value="playfair">Playfair</option>
+
+    </select>
+
+    <div id="claveVigenereInput" style="display: none; margin-top: 10px;">
+      <p class="instruccion">Clave para Vigenère:</p>
+      <input type="text" id="claveVigenere" class="entrada" placeholder="Ej: CLAVE" oninput="procesarTexto()" />
+    </div>  
+
+    <div class="opciones">
+      <label>
+        <input type="checkbox" id="mostrarProceso" onchange="procesarTexto()" />
+        Mostrar el procedimiento paso a paso
+      </label>
+    </div>
+
+    <div class="resultado">
+      <p><strong>🔐 Cifrado:</strong> <span id="cifrado"></span></p>
+      <p><strong>🔓 Descifrado:</strong> <span id="descifrado"></span></p>
+    </div>
+
+    <button onclick="guardarEnBD()" style="margin-top: 20px;">💾 Guardar en base de datos</button>
+
+
+    <div id="proceso" class="proceso"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
